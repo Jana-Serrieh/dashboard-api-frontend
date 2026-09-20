@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  background: #fafafa;
+  color: #222;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+
+/* Search */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-container input {
+  width: 400px;
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+
+.search-container input:focus {
+  border-color: #a5b4fc;
+}
+
+
+/* Loading */
+.loading-container {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* Error */
+.error-container {
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
+
+
+/* Users */
+.user-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* User Card */
+.user-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.user-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.user-card p {
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* No Users */
+.no-users {
+  text-align: center;
+  margin: 30px;
+}
+
+/* Chart */
+.chart-container {
+  max-width: 1100px;
+  height: 450px;
+  margin: 50px auto 0;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .user-container {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .user-container {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-container {
+    height: 350px;
+    padding: 15px;
+  }
+}
