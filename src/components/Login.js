@@ -52,7 +52,7 @@ function Login({ onLoginSuccess, onSwitchToSignup }) {
                     onChange={(e) => setEmail(e.target.value)}
                     required style={{
                         padding: "12px",
-                        borderRadius: "8px",
+                        borderRadius: "9px",
                         border: "1px solid #ddd"
                     }} />
 
